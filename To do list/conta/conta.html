@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conta.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Conta</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Crie sua conta</h1>
+    <div id="containerForm">
+        <input type="text" id="name" required placeholder="Nome *">
+        <input type="tel"  id="phone" placeholder="Telefone: (xx) xxxxx-xxxx">
+        <input type="email" id="email" required placeholder="Email *">
+        <input type="password" id="password" required placeholder="Senha (6 dígitos) *">
+        <button id="enter" onclick="create()">Criar conta</button>
+    </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="conta.js"></script>
+</body>
+
+</html>
